@@ -1,5 +1,5 @@
 # HelloWorldDriver
-Just a base I use for setting up and deploying a driver
+Just a base I use for setting up and deploying a driver, remember to use KDMapper
 
 https://www.unknowncheats.me/forum/anti-cheat-bypass/374439-kernel_security_check_failure-kdmapper.html
 
@@ -84,7 +84,7 @@ Capture Events
 Then in your DriverEntry, call DbgPrintEx like so:
 Code:
 
-    DbgPrintEx(DPFLTR_IHVDRIVER_ID, DPFLTR_ERROR_LEVEL, "YourDriverName: Message Here\n");
+	DbgPrintEx(DPFLTR_IHVDRIVER_ID, DPFLTR_ERROR_LEVEL, "YourDriverName: Message Here\n");
 
 Then when you load your driver, you should receive the message correctly.
 Here's a screenshot of my DbgView.
